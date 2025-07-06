@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到我的项目</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* For Safari */
+            border-radius: 15px;
+            padding: 40px;
+            margin: 20px;
+            max-width: 800px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 0.2em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #eee;
+        }
+
+        main h2 {
+            margin-top: 40px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+        }
+
+        .feature h3 {
+            margin-top: 0;
+        }
+
+        button {
+            margin-top: 40px;
+            padding: 15px 30px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #764ba2;
+            background-color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background-color: #f0f0f0;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 项目启动！</h1>
+            <p>这是一个用于 GitHub 测试的演示页面。</p>
+        </header>
+        <main>
+            <h2>关于项目</h2>
+            <p>这个项目展示了一个简单而美观的静态网页。它使用了 HTML 和 CSS 来创建一个现代化的、响应式的布局。</p>
+            <div class="features">
+                <div class="feature"><h3>✨ 特性一</h3><p>响应式设计，在任何设备上都看起来很棒。</p></div>
+                <div class="feature"><h3>🎨 特性二</h3><p>平滑的动画和漂亮的渐变背景。</p></div>
+                <div class="feature"><h3>🔧 特性三</h3><p>易于定制和扩展，为您的下一个项目提供了一个很好的起点。</p></div>
+            </div>
+            <button id="actionButton">点我试试！</button>
+        </main>
+        <footer>
+            <p>&copy; 2024 - 由 Gemini Code Assist 生成</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('actionButton').addEventListener('click', () => {
+            alert('感谢您的点击！这是一个简单的交互示例。');
+        });
+    </script>
+</body>
+</html>
